@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Name
+            </th>
+            <th>
+                Image
+            </th>
+            <th>
+                Price(Vnd)
+            </th>
+            <th>
+                Quantity
+            </th>
+            <th>
+                Unit total price(Vnd)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody id="list-cart"></tbody>
+</table>
+
+@section Scripts {
+    @Scripts.Render("~/Scripts/cart.js")
+}
